@@ -41,6 +41,7 @@ classdef PlotDefaults < handle
     methods (Static)
         applyDefaultLabels;
         applySizes(sizes);
+        applyEqualAxes(axes_char);
     end
 
     methods (Static)

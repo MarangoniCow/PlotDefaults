@@ -1,8 +1,31 @@
 % ----------------------------------------------------------------------- %
 % ----------------------------------------------------------------------- %
-%   COLOURS
+%   PLOTCOLOURS
 %
-%   A static class which introduces several variables for plot defaults
+%   A constant data class providing a range of colours for plots. Colours
+%   and shades are produced from https://coolors.co/generate. Each colour
+%   is a 12-by-3 array, where the indicies 1 through 12 return a different
+%   shade of that colour, and the 3 components correspond to the RGB values
+%   of that colour. Available colours:
+%   
+%       blue
+%       orange
+%       yellow
+%       green
+%       purple
+%
+%   Recommended usage: PlotColours can be used directly by accessing any of
+%   the colours through,
+%       PlotColours.colours.colour(n_shade, :),
+%   where colour is the colour of choice and n_shade is the index
+%   corresponding to the colour of choice.
+%   
+%   However, PlotColours is also attached to the PlotDefaults class, and
+%   can be accessed by PlotDefaults.colours.colour(n_shade, :), assuming
+%   PlotDefaults is present on your system.
+%
+%   % Copyright (C) Matthew Sparkes 2022 - 2023
+%
 %
 % ----------------------------------------------------------------------- %
 % ----------------------------------------------------------------------- %
@@ -36,8 +59,7 @@ classdef PlotColours < handle
                             35, 110, 128;
                             26, 82, 96;
                             18, 55, 64;
-                            9, 27, 32;
-                            4, 13, 16
+                            9, 27, 32
                             ]./255;
         
             obj.orange =    [
