@@ -42,6 +42,7 @@ classdef PlotDefaults < handle
         applyDefaultLabels;
         applySizes(sizes);
         applyEqualAxes(axes_char);
+        col = fetchColourByIdx(idx);
     end
 
     methods (Static)

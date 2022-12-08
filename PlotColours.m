@@ -36,7 +36,7 @@ classdef PlotColours < handle
         colours = PlotColours;
     end
 
-    properties
+    properties (SetAccess = protected)
         blue
         orange
         yellow
