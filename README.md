@@ -10,6 +10,7 @@ Unzip PlotDefaults to a location of your choosing, and make sure that location i
   applySizes          - apply one of three pre-set size definitions to
                         the tick, label and legend. Options are, 'std',
                         'med', 'big'.
+  applyEqualAxes      - apply equal x,y,z data aspect ratios, or any combination of x,y,z.
   colours             - set of arrays containing RGB data for different
                         colours
 ### Examples:
