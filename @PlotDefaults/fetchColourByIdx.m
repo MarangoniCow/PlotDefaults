@@ -32,7 +32,10 @@ function colToReturn = fetchColourByIdx(idx, init_shade)
     if shade > M
         error('Initial shade too large');
     else
-        colidx = mod(idx - 1, N - 1) + 1;
+        colidx = mod(idx, N);
+        if colidx == 0
+            colidx = N;
+        end
         colToReturn = PlotColours.colours.(colournames{colidx})(shade, :);
         
     end
